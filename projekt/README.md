@@ -16,7 +16,7 @@ Det är en intressant fråga, i och med att det är användaren själv som letar
  Målet är att använda sig av kända och enkla verktyg samtidigt skapa en funktionell back-end på enklaste sätt för att göra applikationen så bra som möjligt.<br>
  
 <strong>Teknikval</strong>
-Jag har valt att använda mig av React JS för uppbyggnad av Application för detta blir det enklaste för mig att använda, då jag anser att det finns mest kunskap inom det verktyg.  För att samla min back-end har jag valt att använda mig av Firebase för att det är ett verktyg jag använt innan & jag anser att det är en enklare väg att gå.  Appen skall ha en Autentisering och jag väljer att bygga det i react JS. Appen skall också ha en chatt där folk skall kunna kommunicera, här har jag tänkt att få det att fungera med Firebase. 
+Jag har valt att använda mig av React JS för uppbyggnad av Application för detta blir det enklaste för mig att använda, då jag anser att det finns mest kunskap inom det verktyg.  För att samla min back-end har jag valt att använda mig av Firebase för att det är ett verktyg jag använt innan & jag anser att det är en enklare väg att gå.  Appen skall ha en Autentisering och jag väljer att bygga det i react JS. Appen skall också ha en chatt där folk skall kunna kommunicera, här har jag tänkt att få det att fungera med Firebase.
 
 
 <strong>Wireframe/Skisser</strong>
@@ -36,11 +36,11 @@ Vanligtvis fokuserar jag väldigt mycket på Styling för jag gillar det. Men mi
 
 
 <strong>Tidsplan</strong>
-Vecka 1-2. Wireframes och undersökning av prototyper. Jämför olika hemsidor med samma struktur, Skissar i ett program som heter Elementor för att det är en enkel uppbyggnad av drag and drop CSS. <br>
+Vecka 1-2. Wireframes och undersökning av prototyper.<italic>Jämför olika hemsidor med samma struktur, Skissar i ett program som heter Elementor för att det är en enkel uppbyggnad av drag and drop CSS. </italic><br>
 Vecka 2-6. Utveckling av applikationen.  
-Påbörja uppbyggnaden i Front-end ReactJS. Strukturen och hur jag tänkt att applikationen skall fungera.<br>
+<italic>Påbörja uppbyggnaden i Front-end ReactJS. Strukturen och hur jag tänkt att applikationen skall fungera.</italic><br>
 Vecka 7. Bugg testning av applikation. Testa Applikation ( fel fri )
-Se till att applikationen inte har några ev. Fel. Testar själv produkten till den är helt färdig för att kunna sammanfatta det.<br>
+<italic>Se till att applikationen inte har några ev. Fel. Testar själv produkten till den är helt färdig för att kunna sammanfatta det.</italic>
 Vecka 8. Sammanfatta Arbetet / Dubbel kolla problem
-Sammanfatta mitt arbete, vad hade jag kunnat göra bättre om jag gjort om den. Vilka ev. Fel & förbättringar hade jag kunnat göra. Dubbel kollar också applikationen för att färdigställa den.
- 
+<italic>Sammanfatta mitt arbete, vad hade jag kunnat göra bättre om jag gjort om den. Vilka ev. Fel & förbättringar hade jag kunnat göra. Dubbel kollar också applikationen för att färdigställa den.</italic>
+
