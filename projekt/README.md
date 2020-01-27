@@ -1,68 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Produktbeskrivning
 
-## Available Scripts
+Projektnamn: Service for everyone
+Projektansvarig: Philip Anländer
 
-In the project directory, you can run:
+Sammanfattning 
+Syfte & Mål 
+Att skapa en hemsida som alla har tillgång till att tjäna pengar på via sin egen kunskap är mitt syfte med detta projekt. Jag vill att varje individ skall kunna bli en ”lärare” eller hjälpa andra på ett smidigt och enkelt sätt. Genom att skapa en Application på internet som ger en möjlighet att lägga ut lektioner eller dela med sig av egenskaper för andra människor i utbyte mot en kostnad (som man väljer själv) där det gynnar både köparen och säljaren. Kan man skapa en kommunikation mellan personer som sitter på erfarenhet och personer som vill lära sig men inte vill gå en hel utbildning. Målet med applikationen är som jag medger lite tidigare att skapa en kommunikation via internet där det gynnar både parterna & via internet kunna lära på ett enkelt och smidigt sätt.  
 
-### `npm start`
+Vad ska folk lära sig?
+Det är en intressant fråga, i och med att det är användaren själv som letar efter något speciellt att lära. Är det meningen att man skall kunna lära sig allt. Beroende på vad Admin-användarna har valt att lägga ut.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ Problemställning Applikationen är ämnad för att passa in för alla typer av lektioner & hitta ett enkelt och effektivt sätt att uppnå det. 
+Mål Målet är att använda sig av kända och enkla verktyg samtidigt skapa en funktionell back-end på enklaste sätt för att göra applikationen så bra som möjligt. 
+Teknikval
+Jag har valt att använda mig av React JS för uppbyggnad av Application för detta blir det enklaste för mig att använda, då jag anser att det finns mest kunskap inom det verktyg.  För att samla min back-end har jag valt att använda mig av Firebase för att det är ett verktyg jag använt innan & jag anser att det är en enklare väg att gå.  Appen skall ha en Autentisering och jag väljer att bygga det i react JS. Appen skall också ha en chatt där folk skall kunna kommunicera, här har jag tänkt att få det att fungera med Firebase. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+Wireframe/Skisser
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Omfattning & Strategi
+ Omfattning
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Skiss, Design & upplägg - Bulma-Theme / Elementor
+- Front-end Upplägg & Back-end ReactJS / Firebase
+- Firebase  Strategi
+Vanligtvis fokuserar jag väldigt mycket på Styling för jag gillar det. Men min strategi handlar mycket om applikationen generellt. Bygga upp det på ett smart och effektivt sätt, samt inte göra det för komplicerat. Fokusera på en sak är något som jag kommer använda mig mycket av. Kommer dela upp allt i en typ av to do list (möjligtvis Trello). Sammanfattat skall allt vara så effektivt som möjligt så jag hittar ett sätt att jobba på som unnar mig.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Avgränsningar
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Tidsplan
+Vecka 1-2. Wireframes och undersökning av prototyper. Jämför olika hemsidor med samma struktur, Skissar i ett program som heter Elementor för att det är en enkel uppbyggnad av drag and drop CSS. Vecka 2-6. Utveckling av applikationen.  
+Påbörja uppbyggnaden i Front-end ReactJS. Strukturen och hur jag tänkt att applikationen skall fungera. Vecka 7. Bugg testning av applikation. Testa Applikation ( fel fri )
+Se till att applikationen inte har några ev. Fel. Testar själv produkten till den är helt färdig för att kunna sammanfatta det.
+Vecka 8. Sammanfatta Arbetet / Dubbel kolla problem
+Sammanfatta mitt arbete, vad hade jag kunnat göra bättre om jag gjort om den. Vilka ev. Fel & förbättringar hade jag kunnat göra. Dubbel kollar också applikationen för att färdigställa den.
+ 

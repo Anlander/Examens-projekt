@@ -1,12 +1,12 @@
 import React from 'react'
-// import Navbar from '../components/Navbar'
-// import NavbarClone from '../components/NavbarClone'
+import NavbarClone from './Components/NavbarClone'
 
 class Home extends React.Component {
 
   render() {
     return (
       <div>
+        <NavbarClone />
         <section className="hero is-default is-bold">
           <div className="hero-body">
             <div className="container">
@@ -24,7 +24,7 @@ class Home extends React.Component {
                 </div>
                 <div className="column is-5 is-offset-1">
                   <figure className="image is-4by3">
-                      <img src={process.env.PUBLIC_URL + '/worker.svg'} alt="Description" />
+                    <h1> Picture </h1>
                   </figure>
                 </div>
               </div>
