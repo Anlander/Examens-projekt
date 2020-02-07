@@ -1,9 +1,45 @@
 import React from 'react'
 import NavbarClone from './Components/NavbarClone'
+import Navbar from './Components/Navbar'
+
+import { getServices } from '../store'
 
 class Home extends React.Component {
+  state = {
+    services: []
+  }
+
+  componentDidMount () {
+    const services = getServices()
+    this.setState({services})
+  }
+
+  renderServices = (services) => {
+    console.log(this.state.services);
+    return services.map(service =>
+          <div
+            key={services.id}
+            className="column is-one-third">
+            <div className="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+              <div className="card-title">
+                 <h4>{services.title}</h4>
+              </div>
+              <div className="card-icon">
+                 <img src={services.image} alt=""/>
+              </div>
+              <div className="card-text">
+                 <p>{services.description}</p>
+              </div>
+              <div className="card-action">
+                 <a href="#" className="button btn-align-md accent-btn raised">Learn More</a>
+              </div>
+            </div>
+          </div>
+    )
+  }
 
   render() {
+    const {services} = this.state
     return (
       <div>
         <NavbarClone />
@@ -44,57 +80,10 @@ class Home extends React.Component {
 
             <div className="content-wrapper">
               <div className="columns">
-                <div className="column is-one-third">
-                  <div className="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
-                    <div className="card-title">
-                       <h4>App builder</h4>
-                    </div>
-                    <div className="card-icon">
-                       <img src="https://images.unsplash.com/photo-1574333751899-72c1e3d963fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" alt=""/>
-                    </div>
-                    <div className="card-text">
-                       <p>This is some explanatory text that is on two rows</p>
-                    </div>
-                    <div className="card-action">
-                       <a href="#" className="button btn-align-md accent-btn raised">Free Trial</a>
-                    </div>
-                  </div>
-                </div>
-                <div className="column">
-                  <div className="feature-card is-bordered has-text-centered revealOnScroll delay-2" data-animation="fadeInLeft">
-                    <div className="card-title">
-                      <h4>Cloud integration</h4>
-                    </div>
-                    <div className="card-icon">
-                      <img src="https://images.unsplash.com/photo-1574333751899-72c1e3d963fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" alt=""/>
-                    </div>
-                    <div className="card-text">
-                      <p>This is some explanatory text that is on two rows</p>
-                    </div>
-                    <div className="card-action">
-                      <a href="#" className="button btn-align-md secondary-btn raised">Get Started</a>
-                    </div>
-                  </div>
-                </div>
-                <div className="column">
-                  <div className="feature-card is-bordered has-text-centered revealOnScroll delay-3" data-animation="fadeInLeft">
-                    <div className="card-title">
-                      <h4>Addons & Plugins</h4>
-                    </div>
-                    <div className="card-icon">
-                      <img src="https://images.unsplash.com/photo-1574333751899-72c1e3d963fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" alt=""/>
-                    </div>
-                    <div className="card-text">
-                      <p>This is some explanatory text that is on two rows</p>
-                    </div>
-                    <div className="card-action">
-                      <a href="#" className="button btn-align-md primary-btn raised">Get Started</a>
-                    </div>
+                {this.renderServices()}
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
         </section>
       </div>
     )
