@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const NavbarClone = () => {
@@ -35,16 +36,16 @@ const NavbarClone = () => {
           </div>
 
           <div className="navbar-end">
-            <a href="#" className="navbar-item is-secondary">
-                Features
-            </a>
-            <a href="#" className="navbar-item is-secondary">
-                Pricing
-            </a>
+            <Link to="/" className="navbar-item is-secondary">
+                Home
+            </Link>
+            <Link to="/Services" className="navbar-item is-secondary">
+                Services
+            </Link>
             <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">
+              <Link className="navbar-link">
                   Dropdown
-              </a>
+              </Link>
 
               <div className="navbar-dropdown">
                 <a className="navbar-item">
@@ -58,13 +59,13 @@ const NavbarClone = () => {
                 </a>
               </div>
             </div>
-            <a href="#" className="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
+            <Link to="/Login" className="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
                 Log in
-            </a>
+            </Link>
             <a className="navbar-item">
-              <span className="button signup-button rounded secondary-btn raised">
+              <Link to="/Register" className="button signup-button rounded secondary-btn raised">
                  Sign up
-              </span>
+              </Link>
             </a>
           </div>
         </div>
