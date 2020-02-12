@@ -1,9 +1,11 @@
 import React from 'react'
-
+import { connect } from 'react-redux'
+import { fetchServices } from '../actions'
 import ServiceItem from './Components/service/serviceItem'
 import Hero from './Components/hero'
 
-import { getServices } from '../store'
+
+
 
 class Home extends React.Component {
   state = {
@@ -11,8 +13,10 @@ class Home extends React.Component {
   }
 
   componentDidMount () {
-    const services = getServices()
-    this.setState({services})
+    this.props.dispatch(fetchServices())
+    console.log(fetchServices());
+
+
   }
 
   renderServices = (services) => {
@@ -20,7 +24,9 @@ class Home extends React.Component {
   }
 
   render() {
-    const {services} = this.state
+    const {services} = this.props
+    // const {testingData, testingNumber} = this.props.test
+
     return (
       <div>
 
@@ -46,4 +52,6 @@ class Home extends React.Component {
   }
 }
 
-export default Home
+const mapStateToProps = state => ({services: state.services.items})
+
+export default connect(mapStateToProps)(Home)

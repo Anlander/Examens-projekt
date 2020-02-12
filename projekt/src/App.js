@@ -1,6 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import initStore from './store'
+
 import './App.css';
+
 
 import ProfilePage from './pages/Profile'
 import ServicePage from './pages/Services'
@@ -10,10 +14,11 @@ import Home from './pages/Home'
 
 import NavbarClone from './pages/Components/NavbarClone'
 
+const store = initStore()
 
 function App() {
   return (
-    <div className="App">
+    <Provider store={store}>
       <Router>
         <NavbarClone />
         <Switch>
@@ -34,7 +39,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-    </div>
+    </Provider>
   );
 }
 
