@@ -1,18 +1,28 @@
-
-
-
 import { createStore, combineReducers } from 'redux'
 import servicesReducer from '../reducers'
 
-const addLoggerToDispatch = (store) => {
+
+const addLoggerToDispatch = store => {
   const dispatch = store.dispatch
-  return (action) => {
-    console.group(action.type);
-    console.log('prev state', store.getState());
+
+  return action => {
     const returnValue = dispatch(action)
     return returnValue
   }
 }
+
+const addPromiseToDispatch = store => {
+  const dispatch = store.dispatch
+
+  return action => {
+    if (typeof action.then === 'function') {
+      return action.then(dispatch)
+    }
+
+    return dispatch(action)
+  }
+}
+
 
 const initStore = () => {
 
@@ -20,13 +30,16 @@ const initStore = () => {
     services: servicesReducer
   })
 
-  const reduxBrowser = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  const store = createStore(serviceApp, reduxBrowser)
+  const browserSupport = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  const store = createStore(serviceApp, browserSupport)
 
-  store.dispatch = addLoggerToDispatch(store)
+  if (process.env.NODE_ENV !== 'production') {
+    store.dispatch = addLoggerToDispatch(store)
+  }
+
+  store.dispatch = addPromiseToDispatch(store)
+
   return store
 }
-
-
 
 export default initStore

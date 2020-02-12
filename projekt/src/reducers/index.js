@@ -1,17 +1,19 @@
-import { FETCH_SERVICES } from '../type'
 
-const INITINAL_STATE = {
+import { FETCH_SERVICES_SUCCESS } from '../type'
+
+
+const INITIAL_STATE = {
   items: []
 }
 
-const servicesReducer = (state = INITINAL_STATE, action) => {
+
+const servicesReducer = (state = INITIAL_STATE, action) => {
   switch(action.type) {
-    case 'FETCH_SERVICES':
-    return {...state, items: action.services}
+    case FETCH_SERVICES_SUCCESS:
+      return {...state, items: action.services}
     default:
-    return state
+      return state
   }
 }
-
 
 export default servicesReducer
