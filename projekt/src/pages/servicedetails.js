@@ -8,14 +8,13 @@ const ServiceDetail = props => {
   const { id } = useParams()
   const { dispatch } = props
 
-
   useEffect(() => {
     dispatch(fetchServiceById(id))
-  }, [])
+  }, [id, dispatch])
 
 
   const { service } = props
-  console.log(props)
+  console.log(dispatch)
 
   return (
     <section className="hero is-fullheight is-default is-bold">
@@ -24,15 +23,15 @@ const ServiceDetail = props => {
           <div className="columns is-vcentered">
             <div className="column is-5">
               <figure className="image is-4by3">
-                 <img src={id.image} alt="Description" />
+                 <img src={service.image} alt="Description" />
               </figure>
             </div>
             <div className="column is-6 is-offset-1">
               <h1 className="title is-2">
-                  {id.title}
+                  {service.title}
               </h1>
               <h2 className="subtitle is-4">
-                  {id.description}
+                  {service.description}
               </h2>
               <br />
               <p className="has-text-centered">
