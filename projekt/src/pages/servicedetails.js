@@ -14,7 +14,6 @@ const ServiceDetail = props => {
 
 
   const { service } = props
-  console.log(dispatch)
 
   return (
     <section className="hero is-fullheight is-default is-bold">
