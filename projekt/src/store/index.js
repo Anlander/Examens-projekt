@@ -4,10 +4,10 @@ import serviceApp from '../reducers'
 
 const logger = store => nextDispatch => action => {
   console.group(action.type)
-  console.log('%c prev state', 'color: gray', store.getState())
-  console.log('%c action', 'color: blue', action)
+  console.log(store.getState())
+  console.log(action)
   const returnValue = nextDispatch(action)
-  console.log('%c next state', 'color: green', store.getState())
+  console.log(store.getState())
   console.groupEnd(action.type)
   return returnValue
 }
