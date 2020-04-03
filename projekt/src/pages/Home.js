@@ -36,7 +36,7 @@ class Home extends React.Component {
           <div className="container">
             <div className="title-wrapper has-text-centered">
               <h2 className="title is-2"> Services </h2>
-              <h3 className="subtitle is-5 is-muted"> You need help? go fuck yourself</h3>
+              <h3 className="subtitle is-5 is-muted"> You need help?</h3>
               <div className="divider is-centered"></div>
             </div>
 
